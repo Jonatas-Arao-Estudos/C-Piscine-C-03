@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:41:47 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/29 19:15:14 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/29 19:29:54 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	src_len = ft_strlen(src);
 	if (size <= dest_len)
 		return (size + src_len);
-	while (src[index] != '\0' && index <= size - dest_len - 1)
+	while (src[index] != '\0' && index < size - dest_len - 1)
 	{
 		dest[dest_len + index] = src[index];
 		index = index + 1;
