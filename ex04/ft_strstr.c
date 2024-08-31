@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:19:05 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/29 11:17:33 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/31 18:43:34 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ char	*ft_strstr(char *str, char *to_find)
 	unsigned int	jump;
 
 	index = 0;
+	if (to_find[0] == '\0')
+		return (str);
 	while (str[index] != '\0')
 	{
 		jump = 0;
